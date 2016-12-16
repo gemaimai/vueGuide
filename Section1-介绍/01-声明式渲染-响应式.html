@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>声明式渲染-responsive</title>
+    <script src="../js/vue.js"></script>
+</head>
+<body>
+    //1. id的app 跟谁对应？  var app？  el:"#app"? 测试 app跟 el:"#app"对应
+    //2.new vue 的参数{} 属性名称是固定的？都有哪些？ 固定
+    <div id="appId">
+        {{message}}
+    </div>
+    <input id="bt1" type="button" value="改变model值，测试响应式！modelToView">
+    <script>
+        var app1=new Vue({
+            el:"#appId",
+            data:{
+                message:"hello vue!"
+            }
+        })
+        document.getElementById("bt1").onclick=function(){
+            app1.message="hello vue; do you support the responsive? Yes"
+        }
+    </script>
+</body>
+</html>

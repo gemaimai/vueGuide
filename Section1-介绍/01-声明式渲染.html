@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>声明式渲染</title>
+    <script src="../js/vue.js"></script>
+</head>
+<body>
+    //1. id的app 跟谁对应？  var app？  el:"#app"? 测试 app跟 el:"#app"对应
+    //2.new vue 的参数{} 属性名称是固定的？都有哪些？ 固定
+    <div id="appId">
+        {{message}}
+    </div>
+    <script>
+        var app1=new Vue({
+            el:"#appId",
+            data:{
+                message:"hello vue!"
+            }
+        })
+    </script>
+</body>
+</html>
