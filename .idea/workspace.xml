@@ -51,12 +51,36 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="01-vue实例.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="01-vue实例.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Section2-实例/01-vue实例.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.43327555">
-              <caret line="10" column="16" selection-start-line="10" selection-start-column="16" selection-end-line="10" selection-end-column="16" />
+            <state vertical-scroll-proportion="-9.892858">
+              <caret line="19" column="36" selection-start-line="19" selection-start-column="36" selection-end-line="19" selection-end-column="36" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="02-生命周期.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Section2-实例/02-生命周期.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-27.107143">
+              <caret line="33" column="38" selection-start-line="33" selection-start-column="38" selection-end-line="33" selection-end-column="38" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="vue.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/js/vue.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="10.61426">
+              <caret line="3293" column="21" selection-start-line="3293" selection-start-column="12" selection-end-line="3293" selection-end-column="21" />
+              <folding>
+                <element signature="n#!!doc" expanded="true" />
+                <marker date="1481872353589" expanded="false" signature="0:2" placeholder="/** Created by CC on 2016/12/16. ...*/" />
+                <marker date="1481872353589" expanded="true" signature="260088:260097" placeholder="..." />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -79,6 +103,7 @@
         <option value="$PROJECT_DIR$/Section1-介绍/01-声明式渲染.html" />
         <option value="$PROJECT_DIR$/Section1-介绍/01-声明式渲染-响应式.html" />
         <option value="$PROJECT_DIR$/Section2-实例/01-vue实例.html" />
+        <option value="$PROJECT_DIR$/Section2-实例/02-生命周期.html" />
       </list>
     </option>
   </component>
@@ -149,6 +174,20 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="Section2-实例" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="vue" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="vue" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -269,16 +308,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/vue.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.033043478">
-          <caret line="1" column="6" selection-start-line="1" selection-start-column="3" selection-end-line="1" selection-end-column="6" />
-          <folding>
-            <marker date="1481872353589" expanded="false" signature="0:2" placeholder="/** Created by CC on 2016/12/16. ...*/" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Section1-介绍/01-声明式渲染.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-7.392857">
@@ -297,9 +326,29 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Section2-实例/01-vue实例.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.43327555">
-          <caret line="10" column="16" selection-start-line="10" selection-start-column="16" selection-end-line="10" selection-end-column="16" />
+        <state vertical-scroll-proportion="-9.892858">
+          <caret line="19" column="36" selection-start-line="19" selection-start-column="36" selection-end-line="19" selection-end-column="36" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Section2-实例/02-生命周期.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-27.107143">
+          <caret line="33" column="38" selection-start-line="33" selection-start-column="38" selection-end-line="33" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/vue.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="10.61426">
+          <caret line="3293" column="21" selection-start-line="3293" selection-start-column="12" selection-end-line="3293" selection-end-column="21" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+            <marker date="1481872353589" expanded="false" signature="0:2" placeholder="/** Created by CC on 2016/12/16. ...*/" />
+            <marker date="1481872353589" expanded="true" signature="260088:260097" placeholder="..." />
+          </folding>
         </state>
       </provider>
     </entry>

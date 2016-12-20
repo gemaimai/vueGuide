@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>生命周期</title>
+    <script src="../js/vue.js"></script>
+</head>
+<body>
+    <div id="app-22">
+        <h2>{{message}}</h2>
+        <h3>now is {{nowEvent}}</h3>
+        <ul>
+            <li v-for="eventName in eventList">{{eventName}}</li>
+        </ul>
+    </div>
+    <div>
+        <img src="img/lifecycle.png" alt="">
+    </div>
+    <script>
+        var vm=new Vue({
+            el:"#app-22",
+            data:{
+                message:"vue 事件案例",
+                eventList:["beforeCreate","created","beforeMount","mounted",
+                    "beforeUpdate","updated","beforeDestroy","destroy"],
+                nowEvent:"none"
+            },
+            beforeCreate:function(){
+                alert("1");
+                this.nowEvent="beforeCreate";
+            },
+            created:function(){
+                alert(2);
+                this.nowEvent="created";
+            }
+        })
+    </script>
+</body>
+</html>

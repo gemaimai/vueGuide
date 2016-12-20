@@ -6,9 +6,24 @@
     <script src="../js/vue.js"></script>
 </head>
 <body>
+    <div id="app-5">
+        <p>{{ message }}</p>
+        <button v-on:click="reverseMessage">Reverse Message</button>
+    </div>
     <script>
         var vm=new Vue({
-            //选项
+            el:"#app-5",
+            data:{
+                message:"Hello Vue.js!"
+            },
+            created:function(){
+                console.log(this.a);
+            },
+            methods:{
+                reverseMessage:function(){
+                    this.message=this.message.split("").reverse().join("");
+                }
+            }
         })
     </script>
 </body>
