@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>指令directive</title>
+    <script src="../js/vue.js"></script>
+</head>
+<body>
+
+    <div id="app-31" v-bind:title="directiveText">
+        v-bind 元素属性绑定的时候 不能用{{}}，需要指令v-bing:id=''的格式，text绑定，不解析html
+    </div>
+    <script>
+        var vm=new Vue({
+            el:"#app-31",
+            data:{
+                directiveBind:"<h1>这是v-bind绑定的数据</h1>属于text绑定，不接续html"
+            }
+        })
+    </script>
+    <hr/>
+
+    <div id="app-32" v-html="directiveHtml"></div>
+    <script>
+        var vm=new Vue({
+            el:"#app-32",
+            data:{
+                directiveHtml:"<h1>v-html，绑定的是html，能够解析html标签并输出；类似js的innerHTML属性</h1>"
+            }
+        })
+    </script>
+
+    <hr/>
+
+    <div id="app-33" v-show="directiveShow" v-on:click="changeShow">
+        v-show，根据表达式之真假值，切换元素的 display CSS 属性。当条件变化时该指令触发过渡效果。
+    </div>
+    <script>
+        var vm=new Vue({
+            el:"#app-33",
+            data:{
+                directiveShow:"string no empty to bool is true"
+            },
+            methods:{
+                changeShow:function(){
+                    this.directiveShow=0;//num 0  to  boolean  is false;
+                }
+            }
+        })
+    </script>
+</body>
+</html>
