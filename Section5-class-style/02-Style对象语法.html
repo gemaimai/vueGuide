@@ -10,26 +10,27 @@
           background: blue;
       }
       .hasFont{
-          font-size: 30px;
+          font-size: 30px;font-family: "Adobe 楷体 Std R";
       }
     </style>
 </head>
 <body>
 
     <div id="app-52">
-        <div v-bind:class="[isActive,hasFont]">{{message}}</div>
-        <div v-bind:class="[{active:isActive},hasFont]">数组语法中利用对象语法</div>
+        <div v-bind:style="{background:bgd,fontSize:fontSize}">{{message}}</div>
+        <div v-bind:style="classObject">对象语法，注意css属性明可以用  小驼峰 或者  - 分割（-需要加引号）</div>
     </div>
     <script>
         var vm=new Vue({
             el:"#app-52",
             data:{
-                isActive:"active",
-                hasFont:"hasFont",
+                bgd:"blue",
+                fontSize:"30px",
                 message:"多个class同时绑定1",
                 classObject:{
-                    active:false,
-                    hasFont:true
+                    'font-size':"40px",
+                    color:"red",
+                    marginTop:"20px"
                 }
             },
             computed:{
