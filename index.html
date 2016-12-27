@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>index</title>
+    <script src="js/vue.js"></script>
+    <script src="js/cookieUtil.js"></script>
+</head>
+<body>
+    <div id="app-5" v-on:click="eventClick">
+        <p>{{ message }}</p>
+        <p>{{reversedMessage}}</p>
+    </div>
+    <script>
+        alert(cookieUtil.getCookie("test"));
+    </script>
+    <script>
+
+        var vm=new Vue({
+            el:"#app",
+            data:{
+                message:"hello vue!"
+            },
+            created:function(){
+                //事件
+            },
+            methods:{
+                eventClick:function(){
+                    //一般用来作为事件处理程序
+                    this.message="hello computed";
+                }
+            },
+            computed:{
+                reversedMessage:function(){
+                    //一般用来属性计算，
+                    return this.message.split("").reverse().join("")
+                }
+            }
+        })
+    </script>
+
+
+</body>
+</html>

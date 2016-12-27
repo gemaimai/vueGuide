@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>计算属性</title>
+    <script src="../js/vue.js"></script>
+</head>
+<body>
+    <div id="app-41" v-on:click="eventClick">
+        <p>{{message}}</p>
+        <p>{{reversedMessage}}</p>
+    </div>
+    <script>
+        var vm=new Vue({
+            el:"#app-41",
+            data:{
+                message:"hello"
+            },
+            computed:{
+                reversedMessage:function(){
+                    return this.message.split("").reverse().join("")
+                }
+            },
+            methods:{
+                eventClick:function(){
+                    this.message="hello computed";
+                }
+
+            }
+        })
+    </script>
+</body>
+</html>

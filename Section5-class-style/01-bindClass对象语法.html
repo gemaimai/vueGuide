@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>绑定class</title>
+    <script src="../js/vue.js"></script>
+    <style>
+      .active{
+          margin: auto;
+          background: blue;
+      }
+      .hasFont{
+          font-size: 30px;
+      }
+    </style>
+</head>
+<body>
+    <div id="app-51" v-bind:class="{active:isActive}">{{message}}</div>
+    <script>
+        var vm=new Vue({
+            el:"#app-51",
+            data:{
+                isActive:true,
+                message:"绑定class方法"
+            }
+        })
+    </script>
+
+    <div id="app-52">
+        <div v-bind:class="{active:isActive,hasFont:hasFont}">{{message}}</div>
+        <div v-bind:class="classObject">{{message}}</div>
+        <div v-bind:class="classObject2">用计算属性</div>
+    </div>
+    <script>
+        var vm52=new Vue({
+            el:"#app-52",
+            data:{
+                isActive:false,
+                hasFont:true,
+                message:"多个class同时绑定1",
+                classObject:{
+                    active:false,
+                    hasFont:true
+                }
+            },
+            computed:{
+                classObject2:function(){
+                    return {
+                        active:this.isActive,
+                        hasFont:this.hasFont
+                    }
+                }
+            }
+        })
+    </script>
+
+
+
+</body>
+</html>

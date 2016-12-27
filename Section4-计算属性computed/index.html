@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>index</title>
+    <script src="../js/vue.js"></script>
+    <script src="../js/cookieUtil.js"></script>
+</head>
+<body>
+    <div id="app-5" v-on:click="eventClick">
+        <p>{{ message }}</p>
+        <p>{{reversedMessage}}</p>
+    </div>
+
+
+    <script>
+        cookieUtil.setCookie("test","vtest",30);
+    </script>
+</body>
+</html>
